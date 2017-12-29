@@ -1,0 +1,133 @@
+/*Home section*/
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@media screen and (min-width: 1000px){
+    #container{
+        height: 700px;
+        width: 1000px;
+        margin: auto;
+    }
+    .header{
+        margin-top: 0px;
+        width: 1000px;
+    }
+    .port{
+        padding-top: 75px;
+    }
+}
+nav{
+    margin-top: 26px;
+    float: right;
+}
+.navbar{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar:hover{
+    text-decoration: underline;
+}
+span{
+    width:100%;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: #ffffff;
+    clear: both;
+    padding-top: 200px;
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    clear: both;
+   margin-top:  -60px;
+}
+
+/*HEADER SECTION*/
+.portfolio{
+    width: 300px;
+    height: 250px;
+    background-size: cover;
+}
+/*Testimonial Section*/
+p.name{
+    color: #cccccc;
+    font-size: 20px;
+    margin-left: 5%;
+
+
+}
+.contain{
+    background-color: white;
+    border-radius: 3px;
+
+
+}
+
+/*Footer Section*/
+h3{
+    color: #ffffff;
+    font-size: 28px;
+
+}
+
+ a img{
+    height: 50px;
+    width: 50px;
+
+}
+a img{
+    border-radius: 50%;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    margin-top: 320px;
+}
+
+#foot{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+div.contact{
+    float: right;
+    margin-right: 275px;
+    margin-top: 20px;
+
+}
+label{
+    color: #ffffff;
+}
+input.text{
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+    border: none;
+}
+textarea.message{
+    height:50px;
+    width: 250px;
+    border-radius: 3px;
+    border: none;
+
+}
+input.submit{
+    width: 60px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+input.submit:hover{
+    text-decoration: underline;
+}
+
+

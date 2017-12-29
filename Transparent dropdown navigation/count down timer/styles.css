@@ -1,0 +1,18 @@
+body{
+    background-color: brown;
+}
+.countdown{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background: #dddddd;
+    border: 1px solid #999999;
+    box-shadow: 0 0  5px 3px #cccccc ;
+    padding: 10px;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.info{
+    font-size: 80px;
+}

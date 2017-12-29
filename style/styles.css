@@ -1,0 +1,591 @@
+/*Use * to zero out everything on the page example margins and padding*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    color: #777777;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+/*------------------------------ JAVASCRIPT APP SECTION -------------------------------------------*/
+/*
+#btn-open{
+    padding: 10px 30px;
+    margin: 5px 10px;
+    right: 0;
+}
+.side-bar{
+    background-color: rgb(212, 212, 212);
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.side-bar a{
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.side-bar a:hover{
+    color: #85af4b;
+    transition: all 0.5s ease;
+}
+.new-backgrounds{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b2b2b2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.new-backgrounds > div{
+    width:100%;
+    height: 100px;
+    background-color: #777777;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.add-border{
+    border: 4px solid red;
+}
+#update-button{
+    background-color: red;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+#intro-text, #intro-text-color, #job-title, #job-title-color{
+    width: 50%;
+    margin: 10px 50px 10px 10px;
+    border-radius: 20px ;
+    padding-right: 10px;
+    text-align: right;
+    outline: none;
+    float: right;
+}
+*/
+/*------------------------------ NAVIGATION SECTION -------------------------------------------*/
+nav{
+    background-color: lightblue;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+nav:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.logo{
+    float: left;
+    margin: 16px 0 16px 50px;
+    display: inline-block;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.menu{
+    float: right;
+    margin: 16px 30px 0 0 ;
+    display: inline-block;
+}
+.menu ul{
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+}
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding:20px 10px 17px 10px;
+    color: white;
+}
+.menu ul li a:hover  {
+    background-color: blue;
+    color: white;
+    transition: all 0.5s ease;
+}
+/*------------------------------ HEADER SECTION -------------------------------------------*/
+header{
+    background-image: url(../img/1.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    margin: 0 auto;
+    position: relative;
+}
+header p{
+    margin: 0 auto;
+    color: white;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+    animation: heading;
+    animation-duration: 4s;
+
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+}
+@keyframes heading {
+    0%{top: -120px}
+    100%{top: 5px}
+
+}
+header h1{
+    position: relative;
+    animation-name: jobrole1;
+    animation-duration: 4s;
+
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+
+}
+@keyframes jobrole1 {
+    0%{bottom: -30px}
+    100%{bottom: 20px}
+
+
+}
+.hero-container{
+    text-align: center;
+    padding-top: 100px;
+}
+.btn-contact, .btn-work{
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    opacity: 0;
+    animation-name: btns;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s ;
+
+}
+@keyframes btns {
+    0%{opacity: 0}
+    100%{opacity: 1}
+
+}
+.btn-work{
+    background-color: #85af4b;
+    color: white;
+    margin: 15px 10px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+.btn-work:hover{
+    background-color: white;
+    color: #85af4b;
+    transition: all 0.5s ease;
+    border: 2px solid #85af4b;
+    transform: rotateY(180deg);
+}
+.btn-contact{
+    background-color: white ;
+    color: #85af4b;
+    border: 2px solid #85af4b;
+}
+.btn-contact:hover{
+    background-color: #85af4b;
+    color: white;
+    transition: all 0.5s ease;
+    border: 2px solid #ffffff;
+    transform: rotateY(180deg);
+}
+/*------------------------------ ABOUT ME SECTION ------------------------------------------- */
+.about-me{
+    height: auto;
+    width: 100%;
+    padding: 10px 10px 30px 10px;
+
+}
+/* to clear floats */
+.about-me:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-me h2{
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+.about-me h2:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom:0;
+    background-color: #85af4b;
+}
+.about-me .col-left, .col-right{
+    width: 50%;
+    padding-left: 5%;
+    float: left;
+    margin: 0 auto;
+}
+.about-me .col-left{
+    height: 500px;
+    max-width: 100%;
+}
+.about-me a{
+    background-color: #85af4b;
+    padding: 10px  25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    display: inline-block;
+    border: 1px solid #85af4b;
+    align-content: center;
+}
+.about-me a:hover{
+    background-color: rgb(226,226,226);
+    color: #85af4b;
+}
+.about-me .col-left img{
+    border-radius: 50%;
+    max-width: 100%;
+    max-height:100%;
+}
+/*------------------------------ MY SKILLS SECTION -------------------------------------------*/
+.my-skills{
+    background-color: #e2e2e2;
+    padding:10px 10px 30px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.my-skills h2{
+    text-transform: uppercase;
+    position: relative;
+}
+.my-skills h2:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom:0;
+    background-color: #85af4b;
+}
+.my-skills:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.my-skills .skills-left, .skills-center, .skills-right{
+    width: 33.33333%;
+    display: inline-block;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.my-skills i{
+    color: #85af4b;
+    font-size: 60px;
+}
+/*------------------------------ MY PROJECTS SECTION -------------------------------------------*/
+.my-projects{
+    background-color: #ffffff;
+    padding: 10px 10px 50px 10px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+.my-projects:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.my-projects h2{
+    text-transform: uppercase;
+    padding-top: 10px;
+    position: relative;
+    margin-top: 0;
+
+}
+.my-projects h2:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom:0;
+    margin-top: 10px;
+    background-color: #85af4b;
+}
+.my-projects .project-1, .project-2, .project-3{
+    border-radius: 20px;
+    height: 300px;
+    width: 30%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.my-projects .project-1{
+    margin-left: 2%;
+    margin-right: 1.5%;
+    background-image: url("../img/hotel.jpg");
+    background-size: cover;
+}
+.my-projects .project-2{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-image: url("../img/8.jpg");
+    background-size: cover;
+    background-position-y: -60px;
+}
+.my-projects .project-3{
+    margin-right: 2%;
+    margin-left: 1.5%;
+    background-image: url("../img/vita-vilcina-3217.jpg");
+    background-size: cover;
+}
+.my-projects .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 310px;
+}
+.my-projects .overlay:hover{
+
+    padding-top: 130px;
+    transition:all 0.5s ease;
+    background-color: rgba(0,0,0,0.45);
+}
+.my-projects .overlay a{
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*------------------------------ CONTACT ME SECTION -------------------------------------------*/
+.contact-section{
+    text-align: center;
+    background-color: #e2e2e2;
+    margin: 0 auto;
+    padding: 10px 10px 30px 10px;
+}
+.contact-section:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact-section h2{
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-top: 0;
+    position: relative;
+}
+.contact-section h2:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom:0;
+    background-color: #85af4b;
+}
+.contact-section .social-container .paragraph{
+    font-size: 20px;
+}
+.contact-section a{
+    text-decoration: none;
+}
+.social-container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.social-container i{
+    float: left;
+    font-size: 44px;
+    color: #85af4b;
+}
+.col-1, .col-2, .col-3{
+    width: 33.3333%;
+    display: inline-block;
+    float: left;
+}
+.col-1 p, .col-2 p, .col-3 p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.text-bold{
+    color: #333333;
+    font-weight: bold;
+}
+/*------------------------------  FOOTER SECTION -------------------------------------------*/
+footer{
+    text-align: center;
+    background-color: #777777;
+    color: #333333;
+    padding: 10px;
+    margin: 0 auto ;
+}
+footer:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer p, .footer-text i{
+    margin: 0 auto;
+    padding: 10px;
+    float: left;
+}
+
+footer .social i{
+    float: right;
+    font-size: 24px;
+    padding: 10px;
+    color: #85af4b;
+}
+.social i:hover{
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #333333;
+    transition: all 0.1s ease;
+}
+.social a:visited{
+    color:#333333;
+}
+/*------------------------------ HAMBURGER SECTION -------------------------------------------*/
+.hamburger{
+    display: none;
+
+}
+.mobile-menu{
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+
+    }
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    nav::after{
+        content: none;
+    }
+    nav .logo{
+        margin: 0;
+    }
+    .hamburger{
+        display: block;
+
+    }
+    .hamburger{
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: white;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+    }
+    .hamburger.is-active .line:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.is-active .line:nth-child(1){
+        transform: translateY(13px) rotate(45deg);
+
+
+    }
+    .hamburger.is-active .line:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+
+
+    }
+    .mobile-menu {
+        background-color: grey;
+    }
+   .mobile-menu ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+
+    }
+    .mobile-menu ul li:hover{
+        background-color: #85af4b;
+
+    }
+    .mobile-menu ul li a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/*------------------------------  END-------------------------------------------*/
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+body{
+    background-color: brown;
+    text-align: center;
+}
+#calc-container{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb ;
+    box-shadow: 10px 10px 10px 10px #003cff;
+
+}
+input[type=button]{
+    cursor: pointer;
+    outline: 0;
+
+}

@@ -1,0 +1,17 @@
+body{
+    background-color:brown;
+}
+ul{
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    float: left;
+    border: 1px solid #333333;
+    background: #eeeeee;
+    font-size: 50px;
+    color: green;
+
+}
+#input{
+    font-size: larger;
+}

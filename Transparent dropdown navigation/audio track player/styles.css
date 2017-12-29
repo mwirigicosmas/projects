@@ -1,0 +1,46 @@
+body{
+    background-color: brown;
+}
+.trackbar{
+    background: green;
+    height: 100px;
+    font-family: "Trebuchet MS", Arial, Helevitica, SansSerif;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px lightgreen;
+}
+
+.playbutton{
+    opacity: .8;
+    display:block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 14px 0px 0px 14px;
+    border: 2px solid #cbcbcb ;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    background:url("images/simba.JPG") no-repeat;
+}
+
+.playbutton:hover{
+    opacity: 1;
+}
+
+.trackname{
+    float: left; color: #000000;
+    margin: 12px 0px 0px 14px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#trackbox{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb ;
+    box-shadow: 10px 10px 10px 10px #003cff;
+
+}
